@@ -10,7 +10,10 @@ function App() {
   return (
     <>
       <NavBar></NavBar>
-      <Hero></Hero>
+      <Hero name="jungle"></Hero>
+      <Hero name="leart"></Hero>
+
+      <Hero name="besart"></Hero>
     </>
   );
 }
