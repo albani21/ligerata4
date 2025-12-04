@@ -1,0 +1,14 @@
+.hero-banner {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(140deg, red, orange);
+  display: flex;
+  justify-content: center;
+}
+
+.middle-hero {
+  align-content: center;
+  font-weight: bold;
+  font-size: 3rem;
+  color: white;
+}

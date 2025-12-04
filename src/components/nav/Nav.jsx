@@ -1,16 +1,21 @@
 import "./Nav.css";
+import LogIn from "../LogIn/LogIn";
 
 function Nav() {
+  let isLogIn = true;
+
   return (
     <>
       <link rel="preconnect" href="https://fonts.googleapis.com"></link>
       <link
         rel="preconnect"
         href="https://fonts.gstatic.com"
-        crossorigin></link>
+        crossorigin
+      ></link>
       <link
         href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap"
-        rel="stylesheet"></link>
+        rel="stylesheet"
+      ></link>
       <nav>
         <h2 className="logo">
           <span className="logo-start">A</span>
@@ -35,6 +40,9 @@ function Nav() {
           </li>
           <li className="nav-links">
             <a href="#">Contatcs</a>
+          </li>
+          <li className="nav-links">
+            <LogIn></LogIn>
           </li>
         </ul>
       </nav>
