@@ -1,0 +1,16 @@
+:root {
+  --font-family: "Ubuntu Mono", monospace;
+  --font-weight-bold: 700;
+  --font-weight-normal: 400;
+  --font-size-heading1: 2.5rem;
+  --font-size-heading2: 2;
+  --font-size-heading3: 1.5;
+
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

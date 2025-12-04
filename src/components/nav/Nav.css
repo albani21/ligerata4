@@ -1,0 +1,82 @@
+:root {
+  --nav-bg-color: #dd4814;
+  --font-family: "Ubuntu Mono", monospace;
+  --font-weight-bold: 700;
+  --font-weight-normal: 400;
+
+  --font-size-heading1: 2.5rem;
+  --font-size-heading2: 2rem;
+  --font-size-heading3: 1.5rem;
+
+  font-style: normal;
+}
+
+nav {
+  color: #fff;
+  background-color: #dd4814;
+  width: auto;
+  height: 8svh;
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+  padding: 0 4ch;
+
+  font-family: var(--font-family);
+
+  .logo {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-heading1);
+    white-space: nowrap;
+    width: auto;
+
+    overflow: hidden;
+
+    .letters {
+      position: relative;
+      left: -12ch;
+      transition: left 1s ease-in-out;
+    }
+
+    &:hover {
+      .letters {
+        position: relative;
+        left: 0;
+      }
+    }
+  }
+
+  ul {
+    width: 25%;
+
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 10%;
+
+    .nav-links {
+      font-size: var(--font-size-heading3);
+      color: #b3b3b3;
+      perspective: 10px;
+      transition: transform 0.1s ease-in-out;
+
+      &:hover {
+        transform: translateY(-5px);
+        &:active {
+          transform: scale(0.95);
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        perspective: 10px;
+      }
+
+      a:visited {
+        color: #fff;
+      }
+    }
+  }
+}
